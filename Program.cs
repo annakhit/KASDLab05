@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 
 namespace KASDLab05
 {
@@ -6,7 +7,7 @@ namespace KASDLab05
     {
         static void Main()
         {
-            string[] data = FileReader.ReadOneDimensionalArray("../../Data/input.txt", value => value);
+            string[] data = File.ReadAllLines("../../Data/input.txt");
 
             HTMLParser parser = new HTMLParser();
 
