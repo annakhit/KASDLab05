@@ -43,7 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FileReader.cs" />
     <Compile Include="HTMLParser.cs" />
     <Compile Include="MyArrayList.cs" />
     <Compile Include="Program.cs" />
