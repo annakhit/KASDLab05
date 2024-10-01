@@ -1,11 +1,11 @@
 ﻿public class HTMLParser
 {
     readonly MyArrayList<string> tagsArray = new MyArrayList<string>();
-    public MyArrayList<string> Parse(string[] input)
+    public MyArrayList<string> Parse(string[] rows)
     {
-        foreach (string item in input)
+        foreach (string row in rows)
         {
-            foreach (string element in item.Split('<'))
+            foreach (string element in row.Split('<'))
             {
                 if (element.IndexOf('>', 0) != -1)
                 {

@@ -7,11 +7,11 @@ namespace KASDLab05
     {
         static void Main()
         {
-            string[] data = File.ReadAllLines("../../Data/input.txt");
+            string[] rows = File.ReadAllLines("../../Data/input.txt");
 
             HTMLParser parser = new HTMLParser();
 
-            MyArrayList<string> result = parser.Parse(data);
+            MyArrayList<string> result = parser.Parse(rows);
 
             result.Print();
 
